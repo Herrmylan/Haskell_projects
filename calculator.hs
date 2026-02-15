@@ -85,7 +85,7 @@ degToRad = do
     putStrLn "Give an angle in degrees"
     x <- readLn :: IO Double
     let result = show (x * pi / 180)
-    putStrLn (show x ++ "° = " ++ result ++ "rad")
+    putStrLn (show x ++ "° = " ++ result ++ " rad")
 
 radToDeg :: IO ()
 radToDeg = do
@@ -120,5 +120,6 @@ main = do
         "9"  -> radToDeg
         "10" -> trig
         _    -> putStrLn "Invalid operation"
+
 
 
