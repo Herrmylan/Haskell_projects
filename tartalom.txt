@@ -1,0 +1,164 @@
+I.	Alapok – A funkcionális gondolkodás megértése
+1.	A programozási paradigmák áttekintése
+-	Imperatív, objektumorientált, funkcionális stílus
+-	Miért különleges a Haskell?
+2.	A Haskell sajátosságai
+-	Lusta (lazy) kiértékelés
+-	Tisztán funkcionális nyelv
+-	Szigorúan és statikusan típusos rendszer
+-	Kód mint matematika: függvény = leképezés
+3.	A Haskell környezet
+-	GHC, GHCi telepítés és használat
+-	Interaktív futtatás (ghci)
+-	Script fájlok (.hs)
+-	Alapvető parancsok: :load, :type, :info, :reload
+II.	Alap szintaxis és típusok
+1.	Literálok és alap adattípusok
+-	Egész számok, lebegőpontos számok
+-	Karakterek és sztringek
+-	Logikai értékek
+-	Rendezett pár - Tuple
+-	Listák
+2.	Kifejezések és függvényhívások
+-	Függvényalkalmazás
+-	Zárójelezés szabályai
+-	Infix operátorok és prefix alakok
+3.	Függvénydefiníciók
+-	Egyszerű függvény
+-	Többparaméteres függvények
+-	Függvények láncolása, kombinálása
+-	Részleges alkalmazás és curry-zés
+4.	Mintaillesztés
+-	Egyszerű értékekre
+-	Tuple-ökre
+-	Listákra
+-	Mintaillesztés mint vezérlési szerkezet
+III.	Típusrendszer és polimorfizmus
+1.	Típusok és típus-szignatúrák
+-	A :: operátor
+-	Típusdeklarációk
+-	Típusinferencia – automatikus típusmegállapítás
+2.	Típusosztályok (Typeclasses)
+-	Eq, Ord, Show, Read, Enum, Bounded, Ix
+-	Num, Integral, Fractional
+-	A deriving kulcsszó
+-	Függvények mint fromIntegral, realToFrac
+-	Polimorf függvények és korlátozások
+3.	Új típusok definiálása
+-	type szinonimák
+-	data új típusdefiníciók
+-	newtype – hatékony csomagolás
+IV.	Listák és rekurzió
+1.	Listák alapjai
+-	Konstrukció
+-	Mintaillesztés listákra
+-	Lista függvények
+2.	Lista műveletek
+-	Összefűzés
+-	Range (intervallum)
+-       Listagenerátor
+3.	Rekurzió
+-	Egyszerű rekurzív függvények
+-	Akkumulátoros rekurzió
+-	Rekurzió listákon (length, sum, product, map, filter kézzel megírva)
+V.	Magasabb rendű függvények
+1.	Függvény mint érték
+-	Függvény átadása paraméterként
+-	Függvény visszaadása másik függvényből
+2.	Beépített magasabb rendű függvények
+-	map, filter, foldl, foldr, foldl'
+-	zip, zipWith
+-	any, all, takeWhile, dropWhile
+3.	Függvénykompozíció és pontozásos írásmód
+-	Függvénykompozíció
+-	$ operátor – kiértékelési zárójel helyettesítés
+VI.	Kifejezések és kiértékelés
+1.	Szigorú és lusta kiértékelés
+-	Mohó (strict) vs. lazy stratégia
+-	Gráfátírásos kiértékelés
+-	Példák
+-	Miért lehet végtelen listákkal dolgozni?
+2.	Normálforma és konfluencia
+-	Mi a normálforma (NF)?
+-	Mi a konfluencia tulajdonság?
+-	Példák különböző kiértékelési utakra
+VII.	Adatstruktúrák és saját típusok
+1.	Saját adattípusok
+-	data definíció
+-	Konstruktorok használata
+-	Mintaillesztés saját típusokra
+-	Rekordok
+2.	Algebrai adattípusok
+-	Either, Maybe
+-	Rekurzív típusok
+-	Egyszerű fastruktúrák
+3.	type és newtype különbségei
+-	Mikor használjuk melyiket
+VIII.	Vezérlési szerkezetek és monádok
+1.	let, where, if-else és case szerkezetek
+-	Lokális nevek (let)
+-	Függvénydefiníciókhoz kapcsolt (where)
+-	Őrfeltételek - guards
+-	If-else elágazás
+-	case ... of mintaillesztés szerkezete
+2.	Monádok alapfogalmai
+-	Maybe, Either mint monád
+-	Do-notáció: hogyan olvassuk és írjuk át
+-	Hibakezelés monádikus módon
+3.	I/O monád
+-	A main függvény
+-	A putStrLn, getLine, readLn függvények
+-	I/O műveletek láncolása do-val
+IX.	Modularitás és nagyobb programok
+1.	Modulok és importálás
+-	Saját modul létrehozása
+-	Exportálás és importálás szabályai
+2.	Fájlkezelés és I/O
+-	Fájl beolvasás és írás
+-	Lusta é szigorú fájlkezelés
+3.	Hibakezelés funkcionálisan
+-	Maybe, Either, MonadFail
+-	Hibák kezelése tiszta módon
+X.	Haladó témák
+1.	Funktorok, applikatívok, monádok mélyebben
+-	fmap, <*>, >>=
+-	Absztrakció rétegei
+-	Funktor, applikatív és monádikus törvények
+2.	Lusta adatstruktúrák és végtelen programozás
+-	Streamek
+-	Generátorfüggvények
+-	Lusta értékkötések
+3.	Parancsok és mellékhatások modellezése
+-	I/O monád mélyen
+-	State monád, Writer monád
+-	Pure és impure világ elválasztása
+4.	További adatszerkezetek
+-	Tömbök
+-	Vektor
+-	Set - halmaz
+-	Map
+-	HashMap/HashSet
+-	Seq - szekvencia
+XI.	Elvi mélységek és funkcionális elmélet
+1.	Lambda-kalkulus
+-	Lambda kifejezések alapjai
+-	β-redukció, α-konverzió és η-redukció
+-	Miért ez Haskell alapja?
+2.	Kategóriaelméleti háttér
+-	Objektumok és morfizmusok
+-	Funktor mint leképezés
+-	Monád mint struktúra a kategóriaelméletben
+XII.	Alkalmazások és projektek
+1.	Programok és feladatok
+-	99 probléma feladatok
+-	Számológép
+-	Szövegszűrő
+-	Listaelemző
+XIII.	Kapcsolódó területek
+1.	Összehasonlítás más paradigmákkal
+-	Haskell vs. Java / Python / C
+-	Mit tanulhat az OOP a funkcionális világból?
+2.	Programozási elvek általánosan
+-	Absztrakció, moduláris tervezés
+-	Típusbiztonság és hibamentesség
+-	Tesztelés és gondolkodási stílusok
