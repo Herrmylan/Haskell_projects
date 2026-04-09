@@ -4,7 +4,7 @@ import Data.List (foldl')
 
 menu :: IO ()
 menu = do
-    putStrLn "Choose an operation: "
+    putStrLn "\nChoose an operation: "
     putStrLn "1  -  Add"
     putStrLn "2  -  Difference"
     putStrLn "3  -  Product"
@@ -45,7 +45,7 @@ divi = do
     putStrLn "Give two numbers: "
     a <- readLn :: IO Double
     b <- readLn :: IO Double
-    if b == 0 then
+    if (b == 0) then
         putStrLn "No division by 0"
     else do
         let result = show (a / b)
@@ -74,7 +74,7 @@ root = do
     putStrLn "Give two numbers: "
     n <- readLn :: IO Double
     a <- readLn :: IO Double
-    if n == 0 then
+    if (n == 0) then
         putStrLn "0th root doesn't exist"
     else do
         let result = show (a ** (1 / n))
@@ -120,6 +120,5 @@ main = do
         "9"  -> radToDeg
         "10" -> trig
         _    -> putStrLn "Invalid operation"
-
 
 
